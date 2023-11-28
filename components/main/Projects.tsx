@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "../sub/ProjectCard";
+import { Projectss } from "@/constants";
 
 const Projects = () => {
   return (
@@ -8,11 +9,10 @@ const Projects = () => {
         My Projects
       </h1>
       <div className="flex flex-wrap justify-center gap-6 px-4 md:px-10">
-      <ProjectCard src={"/NextWebsite.png"} title={"Modren Next.js Portfolio"} description={"texxstasxfckfdnsdklvnlkfdn vldv klk dfnklvlkfnv ldkfnvklasnfdlkfkn"} />
-      <ProjectCard src={"/NextWebsite.png"} title={"Modren Next.js Portfolio"} description={"texxstasxfckfdnsdklvnlkfdn vldv klk dfnklvlkfnv ldkfnvklasnfdlkfkn"} />
-      <ProjectCard src={"/NextWebsite.png"} title={"Modren Next.js Portfolio"} description={"texxstasxfckfdnsdklvnlkfdn vldv klk dfnklvlkfnv ldkfnvklasnfdlkfkn"} />
-      <ProjectCard src={"/NextWebsite.png"} title={"Modren Next.js Portfolio"} description={"texxstasxfckfdnsdklvnlkfdn vldv klk dfnklvlkfnv ldkfnvklasnfdlkfkn"} />
-      <ProjectCard src={"/NextWebsite.png"} title={"Modren Next.js Portfolio"} description={"texxstasxfckfdnsdklvnlkfdn vldv klk dfnklvlkfnv ldkfnvklasnfdlkfkn"} />
+        {Projectss.map((project)=>(
+            <ProjectCard src={project.src} title={project.title} description={project.desc} key={project.title} href={project.href}/>
+
+        ))}
 
       </div>
     </div>

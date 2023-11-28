@@ -1,3 +1,12 @@
+export const Projectss = [
+  {
+    title:'Notion',
+    desc:"Notion is an intelligent note-taking application that seamlessly integrates AI technologies. Built using OpenAI's powerful language models, Pinecone's database solutions, and the robust Next.js framework, Notion is designed to enhance the efficiency and effectiveness of note-taking in the digital age. It leverages advanced AI features to provide smart insights and assists users in organizing and retrieving information effortlessly.",
+    src:"/Notion.png",
+    href:"https://next-js-notes-ai.vercel.app/"
+  }
+]
+
 export const Skill_data = [
     {
       skill_name: "Html 5",

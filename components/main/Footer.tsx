@@ -14,25 +14,25 @@ const Footer = () => {
           <div className='min-w-[200px] text-center'>
             <div className='font-bold text-lg mb-4'>Community</div>
             <Link href='https://github.com/HasanTayar'>
-              <a className='flex items-center justify-center mb-4 cursor-pointer'>
+              <div className='flex items-center justify-center mb-4 cursor-pointer'>
                 <FaGithub size={20} className="mr-2"/>
                 GitHub
-              </a>
+              </div>
             </Link>
           </div>
           <div className='min-w-[200px] text-center'>
             <div className='font-bold text-lg mb-4'>Social Media</div>
             <Link href='https://www.instagram.com/hasantayar161/'>
-              <a className='flex items-center justify-center mb-4 cursor-pointer'>
+              <div className='flex items-center justify-center mb-4 cursor-pointer'>
                 <FaInstagram size={20} className="mr-2"/>
                 Instagram
-              </a>
+              </div>
             </Link>
             <Link href='https://linkedin.com/in/hasantayar/'>
-              <a className='flex items-center justify-center mb-4 cursor-pointer'>
+              <div className='flex items-center justify-center mb-4 cursor-pointer'>
                 <FaLinkedin size={20} className="mr-2"/>
                 LinkedIn
-              </a>
+              </div>
             </Link>
           </div>
         </div>
