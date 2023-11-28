@@ -12,7 +12,7 @@ const SkillsText = () => {
         className="py-2 px-3 border border-[#7042f88b] opacity-90 flex items-center justify-center gap-2"
       >
         <SparklesIcon className="text-[#b49bff] h-5 w-5" />
-        <h1 className="text-gray-300 text-sm md:text-base">
+        <h1 className="Welcome-text text-sm md:text-base">
           Think better with Next.js 14
         </h1>
       </motion.div>

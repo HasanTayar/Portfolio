@@ -1,9 +1,9 @@
-import React from 'react'
-import HeroContent from '../sub/HeroContent'
+import React from 'react';
+import HeroContent from '../sub/HeroContent';
 
 const Hero = () => {
   return (
-    <div className='relative flex flex-col h-screen w-full overflow-hidden' id='about-me'>
+    <div className='relative flex flex-col min-h-screen w-full overflow-hidden' id='about-me'>
       <video
         autoPlay
         muted
@@ -12,9 +12,9 @@ const Hero = () => {
       >
         <source src='/blackhole.webm' type='video/webm' />
       </video>
-      <HeroContent/>
+      <HeroContent />
     </div>
-  )
-}
+  );
+};
 
 export default Hero;
