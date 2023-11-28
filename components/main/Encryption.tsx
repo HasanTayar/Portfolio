@@ -3,24 +3,25 @@ import React from "react";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
 import Image from "next/image";
+
 const Encryption = () => {
   return (
-    <div className="flex flex-row relative items-center min-h-screen justify-center w-full h-full">
-      <div className="absolute w-auto h-auto top-0 z-[5]">
+    <div className="flex flex-row relative items-center min-h-screen justify-center w-full">
+      <div className="absolute w-auto h-auto top-0 z-10 text-center">
         <motion.div
           variants={slideInFromTop}
-          className="text-[40px] font-medium text-center text-gray-200"
+          className="text-3xl md:text-4xl font-medium text-gray-200"
         >
           Performance
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500  to-cyan-500">
-            {" "}
-            &{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            {" "} &{" "}
           </span>
-          Secuirty
+          Security
         </motion.div>
       </div>
-      <div className="flex flex-col items-center  justify-center translate-y-[-50px] absolute  z-[20] w-auto h-auto">
-        <div className="flex flex-col items-center group cursor-pointer w-auto h-auto">
+
+      <div className="flex flex-col items-center justify-center translate-y-[-50px] absolute z-20 w-auto h-auto">
+        <div className="flex flex-col items-center group cursor-pointer">
           <Image
             src="/LockTop.png"
             alt="Lock Top"
@@ -36,22 +37,24 @@ const Encryption = () => {
             className="z-10"
           />
         </div>
-        <div className="Welcome-box  px-[15px] py-[4px] z-[20] border my-[20px] border-[#7042f88b] opacity-[0.9]">
-          <h1  className="Welcome-text text-[12px]">Encryption</h1>
+        <div className="px-4 py-1 z-20 border my-4 border-[#7042f88b] opacity-90">
+          <h1 className="text-sm text-gray-300">Encryption</h1>
         </div>
       </div>
-      <div className="absolute z-[20] bottom-[10px] px-[5px]">
-      <div className="cursive text-[20px] font-medium text-center text-gray-300">
-        Secure your data with end-to-end encryption
+
+      <div className="absolute z-20 bottom-4 px-4 text-center">
+        <div className="cursive text-lg font-medium text-gray-300">
+          Secure your data with end-to-end encryption
         </div>
       </div>
-      <div className="w-[80%] flex items-start justify-center  absolute">
+
+      <div className="w-full md:w-[80%] flex items-start justify-center absolute">
         <video
           loop
           muted
           autoPlay
           playsInline
-          preload="false"
+          preload="none"
           className="w-full h-auto"
           src="/encryption.webm"
         />
