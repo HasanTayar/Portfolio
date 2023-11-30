@@ -14,12 +14,15 @@ const Footer = () => {
           <div className='min-w-[200px] text-center'>
             <div className='font-bold text-lg mb-4'>Community</div>
 
-            <Link href='https://github.com/HasanTayar' >
-              <span className=' flex items-center justify-center mb-4 cursor-pointer'>
+            <Link href='https://github.com/HasanTayar' passHref={true}>
+            <a className='min-w-[200px] text-center'>
+              <span className='flex items-center justify-center mb-4 cursor-pointer'>
                 <FaGithub size={20} className="mr-2"/>
                 GitHub
               </span>
-            </Link>
+            </a>
+          </Link>
+
           </div>
 
           <div className='min-w-[200px] text-center'>
