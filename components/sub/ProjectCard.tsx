@@ -23,11 +23,10 @@ const ProjectCard = ({ src, title, description, href }: Props) => {
         <div className="relative p-4">
           <h1 className="text-xl font-semibold text-white">{title}</h1>
           <p className="mt-2 text-gray-300">{description}</p>
-          {/* Remove the <a> tag */}
-          <Link href={href}>
-            <span className="cursor-pointer z-50 mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded">
+          <Link href={href} legacyBehavior>
+            <a className="cursor-pointer mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded" target='_blank'>
               Learn More
-            </span>
+            </a>
           </Link>
         </div>
       </div>

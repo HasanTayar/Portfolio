@@ -14,32 +14,35 @@ const Footer = () => {
           <div className='min-w-[200px] text-center'>
             <div className='font-bold text-lg mb-4'>Community</div>
 
-            <Link href='https://github.com/HasanTayar' passHref={true}>
-            <a className='min-w-[200px] text-center'>
-              <span className='flex items-center justify-center mb-4 cursor-pointer'>
+            <Link
+              href='https://github.com/HasanTayar'
+              passHref={true}
+              className='min-w-[200px] text-center' legacyBehavior>
+
+              <a className='flex items-center justify-center mb-4 cursor-pointer' target='_blank'>
                 <FaGithub size={20} className="mr-2"/>
                 GitHub
-              </span>
-            </a>
-          </Link>
+              </a>
+
+            </Link>
 
           </div>
 
           <div className='min-w-[200px] text-center'>
             <div className='font-bold text-lg mb-4'>Social Media</div>
 
-            <Link href='https://www.instagram.com/hasantayar161/' >
-              <span className='flex items-center justify-center mb-4 cursor-pointer'>
+            <Link href='https://www.instagram.com/hasantayar161/' legacyBehavior >
+              <a className='flex items-center justify-center mb-4 cursor-pointer' target='_blank'>
                 <FaInstagram size={20} className="mr-2"/>
                 Instagram
-              </span>
+              </a>
             </Link>
 
-            <Link href='https://linkedin.com/in/hasantayar/' >
-              <span className='flex items-center justify-center mb-4 cursor-pointer'>
+            <Link href='https://linkedin.com/in/hasantayar/' legacyBehavior>
+              <a className='flex items-center justify-center mb-4 cursor-pointer' target='_blank'>
                 <FaLinkedin size={20} className="mr-2"/>
                 LinkedIn
-              </span>
+              </a>
             </Link>
           </div>
         </div>
