@@ -8,7 +8,7 @@ import {
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/outline";
 import { RxDownload } from "react-icons/rx";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const HeroContent = () => {
   return (
